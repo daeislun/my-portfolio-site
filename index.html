@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-портфолио | [Ваше Имя]</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Иконки Font Awesome для соцсетей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Шрифт с Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio<span>.</span></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Раздел "Главная" (Hero Section) -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Привет, я <span class="highlight">[Ваше Имя и Фамилия]</span></h1>
+                <p class="tagline">[Ваша специализация, например: Веб-разработчик и дизайнер]</p>
+                <p class="hero-text">Создаю современные, адаптивные сайты, которые решают бизнес-задачи и привлекают клиентов. Умею работать с кодом и визуальной составляющей проекта.</p>
+                <a href="#portfolio" class="btn">Посмотреть работы</a>
+            </div>
+            <div class="hero-image">
+                <!-- ВАШЕ ОРИГИНАЛЬНОЕ ФОТО ЗДЕСЬ -->
+                <img src="images/my-photo.jpg" alt="Фотография [Ваше Имя]" width="400" height="400">
+            </div>
+        </section>
+
+        <!-- Раздел "Обо мне" -->
+        <section id="about" class="section">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <!-- ВАШ ТЕКСТ "О СЕБЕ" ЗДЕСЬ (минимум 300 символов) -->
+                <p>Меня зовут [Ваше Имя]. Я учусь на [Ваша специальность] в [Название ВУЗа] и активно развиваюсь в сфере веб-технологий. Мой путь начался с интереса к дизайну, который перерос в глубокое изучение frontend-разработки. Я верю, что хороший сайт — это synergy эстетики и функциональности.</p>
+                <p>В своих проектах я уделяю внимание не только внешнему виду, но и технической составляющей: скорости загрузки, чистоте кода, доступности и корректному отображению на всех устройствах. Помимо учебы, я выполняю заказы на фрилансе, где применяю свои знания на практике, решая реальные задачи клиентов.</p>
+                <p>Постоянно изучаю новые инструменты и фреймворки, чтобы оставаться в курсе современных трендов. Моя цель — создавать цифровые продукты, которые приносят пользу пользователям и помогают бизнесу развиваться.</p>
+                <!-- SVG-ИКОНКА ЗДЕСЬ (пример адаптивной графики) -->
+                <div class="svg-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#4a6cf7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="#4a6cf7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="#4a6cf7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="icon-text">Адаптивная векторная иконка (SVG), созданная для этого сайта.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Портфолио" (Галерея) -->
+        <section id="portfolio" class="section dark-bg">
+            <h2 class="section-title light">Мои работы</h2>
+            <div class="gallery">
+                <!-- ВАШИ РАБОТЫ ЗДЕСЬ. Замените src, alt и описание -->
+                <div class="gallery-item">
+                    <img src="images/work1.jpg" alt="Проект 1 - Лендинг для кофейни" loading="lazy">
+                    <h3>Лендинг для кофейни</h3>
+                    <p>Адаптивный сайт с формой онлайн-заказа.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/work2.jpg" alt="Проект 2 - Корпоративный сайт" loading="lazy">
+                    <h3>Корпоративный сайт</h3>
+                    <p>Сайт-визитка для IT-стартапа.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/work3.jpg" alt="Проект 3 - Интернет-магазин" loading="lazy">
+                    <h3>Интернет-магазин</h3>
+                    <p>Прототип магазина с каталогом товаров.</p>
+                </div>
+                <!-- Можно добавить больше работ -->
+            </div>
+        </section>
+
+        <!-- Раздел "Контакты" с Формой -->
+        <section id="contacts" class="section">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Мои контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Город: [Ваш Город]</p>
+                    <!-- КЛИКАБЕЛЬНЫЕ ТЕЛЕФОН И EMAIL -->
+                    <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:example@mail.ru">my.portfolio@mail.ru</a></p>
+                    <div class="social-links">
+                        <!-- ВАШИ ССЫЛКИ НА СОЦСЕТИ ЗДЕСЬ -->
+                        <a href="https://vk.com/yourprofile" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/yourprofile" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://github.com/yourprofile" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Форма обратной связи</h3>
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                            <small class="error-message" id="emailError">Введите корректный email (с символом @).</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Напишите ваше сообщение..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить</button>
+                        <p class="form-note">* — обязательные поля для заполнения</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> [Ваше Имя]. Все права защищены.</p>
+            <p>Сайт создан в рамках лабораторной работы по информатике.</p>
+            <div class="footer-social">
+                <!-- Иконки соцсетей дублируются -->
+                <a href="https://vk.com/yourprofile" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/yourprofile" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p class="qr-caption">QR-код для быстрого перехода на сайт</p>
+            <!-- ВСТАВЬТЕ СГЕНЕРИРОВАННЫЙ QR-КОД С ССЫЛКОЙ НА ВАШ САЙТ -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ваш-сайт.ru" alt="QR Code" class="qr-code">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
